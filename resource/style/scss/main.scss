@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.skipNavigation {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+}
+.wrap {
+    height:100vh;
+}
+.header {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:2rem 4rem;
+    .logo-main {
+        display:block;
+        width:20rem;
+        img {
+            width:100%;
+        }
+    }
+    .nav {
+        ul {
+            display:flex;
+            align-items:center;
+        }
+        li + li {
+            margin-left:3.6rem
+        }
+        a {
+            font-family: "Roboto", sans-serif;
+            font-size:2rem
+        }
+    }
+}
