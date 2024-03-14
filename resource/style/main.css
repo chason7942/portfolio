@@ -1,3 +1,7 @@
+:root {
+  --white-color:#fff;
+}
+
 .skipNavigation {
   display: none;
   position: fixed;
@@ -15,7 +19,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 2rem 4rem;
+  width: 100%;
+  background-color: transparent;
+}
+.header.on {
+  border-bottom: 1px solid #ddd;
+  background-color: var(--white-color);
 }
 .header .logo-main {
   display: block;
@@ -34,4 +47,11 @@
 .header .nav a {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+}
+.header + .section {
+  padding-top: 11.4rem;
+}
+
+.section {
+  height: 100vh;
 }

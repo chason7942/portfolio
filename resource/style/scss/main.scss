@@ -1,4 +1,7 @@
 @charset "UTF-8";
+:root {
+    --white-color:#fff;
+}
 .skipNavigation {
     display:none;
     position:fixed;
@@ -14,7 +17,16 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
+    position:fixed;
+    top:0;
+    left:0;
     padding:2rem 4rem;
+    width:100%;
+    background-color:transparent;
+    &.on {
+        border-bottom:1px solid #ddd;
+        background-color:var(--white-color);
+    }
     .logo-main {
         display:block;
         width:20rem;
@@ -35,4 +47,10 @@
             font-size:2rem
         }
     }
+    & + .section {
+        padding-top: 11.4rem;
+    }
+}
+.section {
+    height:100vh;
 }
